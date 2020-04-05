@@ -131,24 +131,31 @@ class ChatScreen extends StatelessWidget {
             CircleAvatar(
               backgroundImage: NetworkImage(person.profileURL),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  person.personName,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 20,
-                  ),
+            Flexible(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 3),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      person.personName,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 20,
+                      ),
+                    ),
+                    FittedBox(
+                      child: Text(
+                        "last seen today at 12:22",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 14,
+                        ),
+                      ),
+                    )
+                  ],
                 ),
-                Text(
-                  "last seen today at 12:22",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 14,
-                  ),
-                )
-              ],
+              ),
             ),
           ],
         ),

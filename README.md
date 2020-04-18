@@ -2,6 +2,14 @@
 
 A new Flutter project.
 
+## Screenshots
+
+![Chats Tab](/chats_tab.jpg)
+![Stories Tab](/stories_tab.jpg)
+![Calls Tab](/calls_tab.jpg)
+![Chat Screen](/chat_screen.jpg)
+![Story Screen](/image_story.jpg)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
